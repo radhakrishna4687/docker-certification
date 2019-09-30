@@ -366,7 +366,7 @@ To prevent this from happening, ensure that your application runs on hosts with 
 ## RESTART_POLICY
 Configures if and how to restart containers when they exit. Replaces restart.
 
-1. condition: One of none, on-failure or any (default: any).
+1. condition: One of `none`, `on-failure` or `any` (default: `any`).
 2. delay: How long to wait between restart attempts, specified as a duration (default: 0).
 3. max_attempts: How many times to attempt to restart a container before giving up (default: never give up). If the restart does not succeed within the configured window, this attempt doesn’t count toward the configured max_attempts value. For example, if max_attempts is set to ‘2’, and the restart fails on the first attempt, more than two restarts may be attempted.
 4. window: How long to wait before deciding if a restart has succeeded, specified as a duration (default: decide immediately).
